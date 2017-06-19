@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/AlphaIn"
+        android:icon="@mipmap/ic_launcher"
+        android:showAsAction="never"
+        android:title="AlphaIn"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ScaleIn"
+        android:icon="@mipmap/ic_launcher"
+        android:showAsAction="never"
+        android:title="ScaleIn"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/SlideInBottom"
+        android:orderInCategory="100"
+        android:title="SlideInBottom"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/SlideInLeft"
+        android:orderInCategory="100"
+        android:title="SlideInLeft"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/SlideInRight"
+        android:orderInCategory="100"
+        android:title="SlideInRight"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/Custom"
+        android:orderInCategory="100"
+        android:title="Custom"
+        app:showAsAction="never" />
+</menu>

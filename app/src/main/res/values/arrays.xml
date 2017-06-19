@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="navigation_item_ui">
+        <item>TextView</item>
+        <item>抽屉菜单</item>
+        <item>SwitchButton</item>
+        <item>按钮</item>
+    </string-array>
+
+    <string-array name="navigation_item_recycler">
+        <item>通用Adapter</item>
+    </string-array>
+
+</resources>

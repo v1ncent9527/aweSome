@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.brioal.swipemenu.view.SwipeMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_swipemenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/left_menu" />
+
+    <include layout="@layout/right_content" />
+
+</com.brioal.swipemenu.view.SwipeMenu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="https://github.com/zcweng/SwitchButton"
+                android:textColor="@color/primary"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/SwitchButton_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    app:sb_checked="true" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    app:sb_checked="true"
+                    app:sb_show_indicator="false" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    app:sb_checked="true"
+                    app:sb_checked_color="#fdc951" />
+
+                <com.suke.widget.SwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    app:sb_background="#FFF"
+                    app:sb_button_color="#db99c7"
+                    app:sb_checked_color="#A36F95"
+                    app:sb_checkline_color="#a5dc88"
+                    app:sb_shadow_color="#A36F95"
+                    app:sb_uncheckcircle_color="#A36F95" />
+
+                <com.suke.widget.SwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    app:sb_enable_effect="false" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="https://github.com/zagum/Android-SwitchIcon"
+                android:textColor="@color/primary"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:id="@+id/SwitchIconView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="8dp"
+                    app:si_animation_duration="500"
+                    app:si_disabled_alpha=".5"
+                    app:si_disabled_color="#b7b7b7"
+                    app:si_enabled="false"
+                    app:si_no_dash="true"
+                    app:si_tint_color="@color/colorAccent"
+                    app:srcCompat="@mipmap/ic_favorite" />
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:id="@+id/SwitchIconView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="48dp"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    app:si_tint_color="@color/primary"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <com.github.zagum.switchicon.SwitchIconView
+                    android:id="@+id/SwitchIconView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="48dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:padding="8dp"
+                    app:si_disabled_alpha=".5"
+                    app:si_disabled_color="#dadada"
+                    app:si_enabled="false"
+                    app:si_tint_color="@color/accent"
+                    app:srcCompat="@mipmap/click" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="https://github.com/7heaven/SHSwitchView"
+                android:textColor="@color/primary"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <com.sevenheaven.iosswitch.ShSwitchView
+                    android:id="@+id/switch_view"
+                    android:layout_width="66dip"
+                    android:layout_height="44dip"
+                    app:shadowSpace="7dip"
+                    app:tintColor="#ff62cc2f" />
+
+                <com.sevenheaven.iosswitch.ShSwitchView
+                    android:id="@+id/switch_view2"
+                    android:layout_width="66dip"
+                    android:layout_height="44dip"
+                    app:shadowSpace="7dip"
+                    app:tintColor="@color/primary" />
+
+                <com.sevenheaven.iosswitch.ShSwitchView
+                    android:layout_width="66dip"
+                    android:layout_height="44dip"
+                    app:shadowSpace="7dip"
+                    app:tintColor="@color/colorPrimary" />
+
+                <com.sevenheaven.iosswitch.ShSwitchView
+                    android:layout_width="66dip"
+                    android:layout_height="44dip"
+                    app:shadowSpace="7dip"
+                    app:tintColor="@color/colorAccent" />
+
+                <com.sevenheaven.iosswitch.ShSwitchView
+                    android:layout_width="66dip"
+                    android:layout_height="44dip"
+                    app:shadowSpace="7dip"
+                    app:tintColor="@color/purple" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/primary" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

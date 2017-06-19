@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <!-- toolbar弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">#000000</item>
+    </style>
+
+    <!-- 适用于开启滑动返回功能的 Activity -->
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme" />
+
+    <style name="DrawerLayoutTheme" parent="AppTheme"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="cb_theme">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorButtonNormal">@color/white</item>
+    </style>
+
+    <style name="tweetName">
+        <item name="android:textColor">#48495f</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:shadowColor">#44000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="tweetText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColorLink">#888888</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="stv_small_size">80dp</dimen>
+    <dimen name="stv_normal_size">80dp</dimen>
+
+    <!--textview-->
+    <style name="textview">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+</resources>
