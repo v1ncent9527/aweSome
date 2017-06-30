@@ -16,5 +16,8 @@
     <color name="purple">#6844d3</color>
     <color name="opacity_3_white">#4dffffff</color>
     <color name="black">#000000</color>
+    <color name="black_21">#212121</color>
+
+    <color name="gray">#cdcdcd</color>
 
 </resources>
