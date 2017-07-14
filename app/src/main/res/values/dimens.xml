@@ -15,4 +15,11 @@
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:background">@color/primary</item>
     </style>
+
+    <dimen name="common_navigator_height">45dp</dimen>
+    <dimen name="common_navigator_height_2">36dp</dimen>
+    <dimen name="navigator_margin_top">5dp</dimen>
+    <dimen name="small_navigator_height">5dp</dimen>
+    <dimen name="navigator_margin_top_large">45dp</dimen>
+    <dimen name="large_navigator_height">65dp</dimen>
 </resources>

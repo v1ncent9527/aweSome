@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="256dp"
+            android:padding="12dp"
+            app:fb_borderColor="@color/white"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@color/primary"
+            app:fb_focusColor="@color/primary_light"
+            app:fb_radius="30dp"
+            app:fb_text="进入下一个Activity"
+            app:fb_textColor="#FFFFFF"></mehdi.sakout.fancybuttons.FancyButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/women_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/women"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/obj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text=""
+                android:textColor="@color/black_21"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/price_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="@string/eventbus_info"
+        android:textColor="@color/window_background"
+        android:textSize="16sp" />
+</FrameLayout>

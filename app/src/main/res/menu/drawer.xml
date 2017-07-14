@@ -11,5 +11,22 @@
             android:id="@+id/navigation_item_recycler"
             android:icon="@mipmap/recycler"
             android:title="@string/recycler" />
+        <item
+            android:id="@+id/navigation_item_photo"
+            android:icon="@mipmap/photo"
+            android:title="@string/Photo" />
+        <item
+            android:id="@+id/navigation_item_new_technology"
+            android:icon="@mipmap/new_technology"
+            android:title="@string/NewTechnology" />
+        <item
+            android:id="@+id/navigation_item_viewpager"
+            android:icon="@mipmap/indicator"
+            android:title="@string/viewpager" />
+        <item
+            android:id="@+id/navigation_item_test"
+            android:icon="@mipmap/android_test"
+            android:title="@string/Test" />
+
     </group>
 </menu>

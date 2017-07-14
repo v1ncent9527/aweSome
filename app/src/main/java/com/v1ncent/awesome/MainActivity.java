@@ -88,6 +88,18 @@ public class MainActivity extends BaseActivity {
                             case R.id.navigation_item_recycler:
                                 intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_recycler)), "navigation_item_recycler");
                                 break;
+                            case R.id.navigation_item_test:
+                                intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_test)), "navigation_item_test");
+                                break;
+                            case R.id.navigation_item_photo:
+                                intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_photo)), "navigation_item_photo");
+                                break;
+                            case R.id.navigation_item_new_technology:
+                                intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_new_technology)), "navigation_item_new_technology");
+                                break;
+                            case R.id.navigation_item_viewpager:
+                                intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_viewpager)), "navigation_item_viewpager");
+                                break;
                         }
                         menuItem.setChecked(true);
                         drawerLayout.closeDrawers();

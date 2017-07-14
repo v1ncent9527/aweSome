@@ -11,12 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.v1ncent.awesome.base.BaseFragment;
-import com.v1ncent.awesome.common.activity.ButtonAc;
-import com.v1ncent.awesome.common.activity.CommonAdapterAc;
-import com.v1ncent.awesome.common.activity.SwipeMenuAc;
-import com.v1ncent.awesome.common.activity.SwitchButtonAc;
-import com.v1ncent.awesome.common.activity.TextViewActivity;
-import com.v1ncent.awesome.common.adapter.MainAdapter;
+import com.v1ncent.awesome.common.customview.activity.ButtonAc;
+import com.v1ncent.awesome.common.customview.activity.SwitchButtonAc;
+import com.v1ncent.awesome.common.customview.activity.TextViewActivity;
+import com.v1ncent.awesome.common.new_technology.activity.EvetBusAc1;
+import com.v1ncent.awesome.common.recyclerview.activity.CommonAdapterAc;
+import com.v1ncent.awesome.common.recyclerview.activity.SwipeMenuAc;
+import com.v1ncent.awesome.common.test.activity.XxxHdpiAc;
+import com.v1ncent.awesome.common.viewpager.activity.MagicIndicatorMainAc;
 import com.v1ncent.awesome.utils.impl.OnRecyclerViewListener;
 
 import java.util.ArrayList;
@@ -84,6 +86,34 @@ public class MainFragment extends BaseFragment {
                         switch (position) {
                             case 0:
                                 startActivity(new Intent(getActivity(), CommonAdapterAc.class));
+                                break;
+                        }
+                        break;
+                    case "navigation_item_test":
+                        switch (position) {
+                            case 0:
+                                startActivity(new Intent(getActivity(), XxxHdpiAc.class));
+                                break;
+                        }
+                        break;
+                    case "navigation_item_photo":
+                        switch (position) {
+                            case 0:
+                                startActivity(new Intent(getActivity(), XxxHdpiAc.class));
+                                break;
+                        }
+                        break;
+                    case "navigation_item_new_technology":
+                        switch (position) {
+                            case 0:
+                                startActivity(new Intent(getActivity(), EvetBusAc1.class));
+                                break;
+                        }
+                        break;
+                    case "navigation_item_viewpager":
+                        switch (position) {
+                            case 0:
+                                startActivity(new Intent(getActivity(), MagicIndicatorMainAc.class));
                                 break;
                         }
                         break;

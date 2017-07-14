@@ -7,10 +7,26 @@
     <string name="drawer_close">drawer_close</string>
     <string name="iu_custom">CustomView</string>
     <string name="recycler">RecyclerView</string>
+    <string name="Test">Test</string>
 
     <string name="dummy_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.\\n\\nCras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</string>
     <string name="icon_user">&#xf007;</string>
     <string name="icon_like">&#xf087;</string>
     <string name="icon_share">&#xf064;</string>
     <string name="icon_follow">&#xf005;</string>
+    <string name="Photo">Photo</string>
+    <string name="NewTechnology">NewTechnology</string>
+    
+    <string name="eventbus_info">EventBus是greenrobot在Android平台发布的一款以订阅——发布模式为核心的开源库。EventBus翻译过来是事件总线的意思，可以这样理解：一个个事件(event)发送到总线上，然后EventBus根据已注册的订阅者(subscribers)来匹配相应的事件，进而把事件传递给订阅者，这也是观察者模式的一个最佳实践。</string>
+    <string name="viewpager">ViewPager</string>
+
+    <string name="scrollable_tab">scrollable tab</string>
+    <string name="fixed_tab">fixed tab</string>
+    <string name="dynamic_tab">dynamic tab</string>
+    <string name="no_tab_only_indicator">no tab, only indicator</string>
+    <string name="work_with_fragment_container">work with fragment container</string>
+    <string name="tab_with_badge_view">tab with badge view</string>
+    <string name="custom_navigator">custom navigator</string>
+    <string name="random_page">random page</string>
+    <string name="tab_with_custom_layout">load custom layout</string>
 </resources>

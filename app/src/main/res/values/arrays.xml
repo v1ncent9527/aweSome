@@ -11,4 +11,17 @@
         <item>通用Adapter</item>
     </string-array>
 
+    <string-array name="navigation_item_test">
+        <item>hdpi/mdpi/xhdpi/xxhdpi/xxxhdpi</item>
+    </string-array>
+
+    <string-array name="navigation_item_photo">
+        <item>PhotoView</item>
+    </string-array>
+    <string-array name="navigation_item_new_technology">
+        <item>EventBus</item>
+    </string-array>
+    <string-array name="navigation_item_viewpager">
+        <item>MagicIndicator</item>
+    </string-array>
 </resources>

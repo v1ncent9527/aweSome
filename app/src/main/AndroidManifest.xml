@@ -20,73 +20,143 @@
         </activity>
 
         <activity
-            android:name=".common.activity.TextViewActivity"
+            android:name=".common.customview.activity.TextViewActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
-            android:name=".common.activity.SuperTextViewAc"
+            android:name=".common.customview.activity.SuperTextViewAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.SwipeMenuAc"
+            android:name=".common.recyclerview.activity.SwipeMenuAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.SwitchButtonAc"
+            android:name=".common.customview.activity.SwitchButtonAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.ButtonAc"
+            android:name=".common.customview.activity.ButtonAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.CommonAdapterAc"
+            android:name=".common.recyclerview.activity.CommonAdapterAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.AnimationUseAc"
+            android:name=".common.recyclerview.activity.AnimationUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.MultipleItemUseAc"
+            android:name=".common.recyclerview.activity.MultipleItemUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.HeaderAndFooterUseAc"
+            android:name=".common.recyclerview.activity.HeaderAndFooterUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.PullToRefreshUseAc"
+            android:name=".common.recyclerview.activity.PullToRefreshUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.SectionUseAc"
+            android:name=".common.recyclerview.activity.SectionUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.EmptyViewUseAc"
+            android:name=".common.recyclerview.activity.EmptyViewUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.ItemDragAndSwipeUseAc"
+            android:name=".common.recyclerview.activity.ItemDragAndSwipeUseAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".common.activity.ItemClickAc"
+            android:name=".common.recyclerview.activity.ItemClickAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.recyclerview.activity.ExpandableUseAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.recyclerview.activity.DataBindingUseAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.test.activity.XxxHdpiAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.new_technology.activity.EvetBusAc1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.new_technology.activity.EvetBusAc2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.MagicIndicatorMainAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.ScrollableTabExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.FixedTabExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.DynamicTabExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.NoTabOnlyIndicatorExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.FragmentContainerExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.BadgeTabExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.LoadCustomLayoutExampleAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".common.viewpager.activity.CustomNavigatorExampleAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />

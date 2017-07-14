@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="256dp"
+        android:padding="12dp"
+        app:fb_borderColor="@color/white"
+        app:fb_borderWidth="1dp"
+        app:fb_defaultColor="@color/primary"
+        app:fb_focusColor="@color/primary_light"
+        app:fb_radius="30dp"
+        app:fb_text="跟你介绍个对象"
+        app:fb_textColor="#FFFFFF"></mehdi.sakout.fancybuttons.FancyButton>
+
+    <TextView
+        android:id="@+id/to_see"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:text="侧滑不退出可以看girlfriend效果哦~~"
+        android:textColor="@color/primary"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+</FrameLayout>

@@ -18,6 +18,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -34,6 +37,8 @@ dependencies {
 
     compile 'com.jakewharton:butterknife:8.1.0'
     apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
 
     //滑动返回
     compile 'cn.bingoogolapple:bga-swipebacklayout:1.0.8@aar'
@@ -78,5 +83,19 @@ dependencies {
      */
     //https://github.com/CymChad/BaseRecyclerViewAdapterHelper
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18'
+    /**
+     * Photo
+     */
+    //https://github.com/bm-x/PhotoView
+    compile 'com.bm.photoview:library:1.4.1'
+    /**
+     *NewTechnology
+     */
+    compile 'org.greenrobot:eventbus:3.0.0'
+    /**
+     * ViewPager
+     */
+    //https://github.com/hackware1993/MagicIndicator
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
 
 }
