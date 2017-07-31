@@ -48,4 +48,14 @@ public class Movie {
     public void setContent(String content) {
         this.content = content;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "name='" + name + '\'' +
+                ", length=" + length +
+                ", price=" + price +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }

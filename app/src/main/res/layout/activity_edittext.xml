@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="66dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.v1ncent.awesome.common.customview.view.AutoFillEmailEditText
+                android:id="@+id/et_fill_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的邮箱地址"
+                android:maxLines="1"
+                android:textSize="16sp"
+                app:AutoFillEmailEditText_default_drop_down_divider="true"
+                app:AutoFillEmailEditText_domains="/@qq.com,@gmail.com,@126.com,@163.com,@v1ncent.com" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

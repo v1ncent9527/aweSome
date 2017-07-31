@@ -5,10 +5,24 @@
         <item>抽屉菜单</item>
         <item>SwitchButton</item>
         <item>按钮</item>
+        <item>CircularAnim</item>
+        <item>ShapeRipple</item>
+        <item>Mkloader</item>
+        <item>MarqueeView</item>
+        <item>WaveLoading</item>
+        <item>VerificationCode</item>
+        <item>角标</item>
+        <item>EditText</item>
+        <item>Progress</item>
+        <item>Dialog</item>
+        <item>blur</item>
+
     </string-array>
 
     <string-array name="navigation_item_recycler">
         <item>通用Adapter</item>
+        <item>DiscreteScrollView</item>
+        <item>LayoutSwitch</item>
     </string-array>
 
     <string-array name="navigation_item_test">
@@ -23,5 +37,9 @@
     </string-array>
     <string-array name="navigation_item_viewpager">
         <item>MagicIndicator</item>
+    </string-array>
+
+    <string-array name="navigation_item_animation">
+        <item>常用动画</item>
     </string-array>
 </resources>

@@ -100,6 +100,9 @@ public class MainActivity extends BaseActivity {
                             case R.id.navigation_item_viewpager:
                                 intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_viewpager)), "navigation_item_viewpager");
                                 break;
+                            case R.id.navigation_item_anim:
+                                intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_animation)), "navigation_item_animation");
+                                break;
                         }
                         menuItem.setChecked(true);
                         drawerLayout.closeDrawers();

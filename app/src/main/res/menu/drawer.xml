@@ -24,6 +24,10 @@
             android:icon="@mipmap/indicator"
             android:title="@string/viewpager" />
         <item
+            android:id="@+id/navigation_item_anim"
+            android:icon="@mipmap/flash_icon"
+            android:title="@string/anim" />
+        <item
             android:id="@+id/navigation_item_test"
             android:icon="@mipmap/android_test"
             android:title="@string/Test" />

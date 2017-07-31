@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <include layout="@layout/include_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="66dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.v1ncent.awesome.common.customview.view.FlikerProgressBar
+                android:id="@+id/FlikerProgressBar_1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                app:loadingColor="@color/primary"
+                app:stopColor="@color/accent"
+                app:textSize="14sp" />
+
+            <com.v1ncent.awesome.common.customview.view.FlikerProgressBar
+                android:id="@+id/FlikerProgressBar_2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                app:loadingColor="@color/primary"
+                app:radius="20dp"
+                app:stopColor="@color/accent"
+                app:textSize="14sp" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/reload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="4dp"
+                app:fb_text="ReLoad"
+                app:fb_textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+
+            <com.v1ncent.awesome.common.customview.view.NewCreditSesameView
+                android:id="@+id/new_credit_sesame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff5f69" />
+
+            <com.v1ncent.awesome.common.customview.view.OldCreditSesameView
+                android:id="@+id/old_credit_sesame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/reload_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="4dp"
+                app:fb_text="ReLoad"
+                app:fb_textColor="#FFFFFF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -201,6 +201,43 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/primary" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                <!-- Two states switch -->
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/your_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:checked="true"
+                    app:enabled="true"
+                    app:forceAspectRatio="false"
+                    app:switchDesign="android" />
+
+                <!-- Three states switch -->
+                <com.rm.rmswitch.RMTristateSwitch
+                    android:id="@+id/your_id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    app:enabled="true"
+                    app:forceAspectRatio="false"
+                    app:state="left"
+                    app:switchBkgLeftColor="@color/purple"
+                    app:switchBkgMiddleColor="@color/primary"
+                    app:switchBkgRightColor="@color/colorPrimary"
+                    app:switchDesign="large"
+                    app:switchToggleLeftColor="@color/purple"
+                    app:switchToggleLeftImage="@mipmap/smile_ic"
+                    app:switchToggleMiddleColor="@color/gray"
+                    app:switchToggleMiddleImage="@mipmap/atm_ic"
+                    app:switchToggleRightColor="@color/colorPrimary"
+                    app:switchToggleRightImage="@mipmap/cry_ic" />
+
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

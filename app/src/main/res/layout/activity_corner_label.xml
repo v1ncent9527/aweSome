@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@mipmap/square_ic" />
+
+            <com.github.czy1121.view.CornerLabelView
+                android:id="@+id/corner_label_view"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                app:clvFillColor="@color/primary"
+                app:clvFlags="triangle"
+                app:clvPaddingCenter="10dp"
+                app:clvText1="主标题"
+                app:clvText2="副标题"
+                app:clvText2Color="#66ffffff" />
+
+        </FrameLayout>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/color_pick"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            app:fb_borderColor="#FFFFFF"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="#ff5f69"
+            app:fb_focusColor="#ff838b"
+            app:fb_radius="300dp"
+            app:fb_text="选取颜色"
+            app:fb_textColor="#FFFFFF"></mehdi.sakout.fancybuttons.FancyButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/left_top"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="30dp"
+                app:fb_text="左上"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/left_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="30dp"
+                app:fb_text="左下"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/right_top"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="30dp"
+                app:fb_text="右上"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/right_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="30dp"
+                app:fb_text="右下"
+                app:fb_textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/triangle"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="30dp"
+                app:fb_text="三角"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/no_triangle"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:padding="16dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="#ff5f69"
+                app:fb_focusColor="#ff838b"
+                app:fb_radius="30dp"
+                app:fb_text="非三角"
+                app:fb_textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="TextSize" />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/text_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dsb_max="60"
+            app:dsb_min="10"
+            app:dsb_value="30" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Height" />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dsb_max="30"
+            app:dsb_min="15"
+            app:dsb_value="22" />
+
+
+    </LinearLayout>
+</FrameLayout>

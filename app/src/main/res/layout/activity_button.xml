@@ -196,6 +196,30 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/OneDrawable"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="8dp"
+                android:text="createBgColor"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/OneDrawable2"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="8dp"
+                android:text="createBgColorWithAlphaMode"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/OneDrawable3"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="8dp"
+                android:text="createBgColorWithDarkMode"
+                android:textColor="@color/white" />
+
             <com.fenjuly.library.ArrowDownloadButton
                 android:id="@+id/arrow_download_button"
                 android:layout_width="match_parent"

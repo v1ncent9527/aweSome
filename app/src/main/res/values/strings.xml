@@ -19,6 +19,7 @@
     
     <string name="eventbus_info">EventBus是greenrobot在Android平台发布的一款以订阅——发布模式为核心的开源库。EventBus翻译过来是事件总线的意思，可以这样理解：一个个事件(event)发送到总线上，然后EventBus根据已注册的订阅者(subscribers)来匹配相应的事件，进而把事件传递给订阅者，这也是观察者模式的一个最佳实践。</string>
     <string name="viewpager">ViewPager</string>
+    <string name="anim">animation</string>
 
     <string name="scrollable_tab">scrollable tab</string>
     <string name="fixed_tab">fixed tab</string>

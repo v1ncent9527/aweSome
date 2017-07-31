@@ -11,11 +11,25 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.v1ncent.awesome.base.BaseFragment;
+import com.v1ncent.awesome.common.animaiton.activity.CommonAnimAc;
+import com.v1ncent.awesome.common.customview.activity.BlurAc;
 import com.v1ncent.awesome.common.customview.activity.ButtonAc;
+import com.v1ncent.awesome.common.customview.activity.CircularAnimAc;
+import com.v1ncent.awesome.common.customview.activity.CornerLabelAc;
+import com.v1ncent.awesome.common.customview.activity.DialogAc;
+import com.v1ncent.awesome.common.customview.activity.EditTextAc;
+import com.v1ncent.awesome.common.customview.activity.MarqueeViewAc;
+import com.v1ncent.awesome.common.customview.activity.MkloaderAc;
+import com.v1ncent.awesome.common.customview.activity.ProgressAc;
+import com.v1ncent.awesome.common.customview.activity.ShapeRippleAc;
 import com.v1ncent.awesome.common.customview.activity.SwitchButtonAc;
 import com.v1ncent.awesome.common.customview.activity.TextViewActivity;
+import com.v1ncent.awesome.common.customview.activity.VerificationCodeAc;
+import com.v1ncent.awesome.common.customview.activity.WaveLoadingAc;
 import com.v1ncent.awesome.common.new_technology.activity.EvetBusAc1;
 import com.v1ncent.awesome.common.recyclerview.activity.CommonAdapterAc;
+import com.v1ncent.awesome.common.recyclerview.activity.DiscreteScrollViewAc;
+import com.v1ncent.awesome.common.recyclerview.activity.LayoutSwitchAc;
 import com.v1ncent.awesome.common.recyclerview.activity.SwipeMenuAc;
 import com.v1ncent.awesome.common.test.activity.XxxHdpiAc;
 import com.v1ncent.awesome.common.viewpager.activity.MagicIndicatorMainAc;
@@ -80,12 +94,51 @@ public class MainFragment extends BaseFragment {
                             case 3:
                                 startActivity(new Intent(getActivity(), ButtonAc.class));
                                 break;
+                            case 4:
+                                startActivity(new Intent(getActivity(), CircularAnimAc.class));
+                                break;
+                            case 5:
+                                startActivity(new Intent(getActivity(), ShapeRippleAc.class));
+                                break;
+                            case 6:
+                                startActivity(new Intent(getActivity(), MkloaderAc.class));
+                                break;
+                            case 7:
+                                startActivity(new Intent(getActivity(), MarqueeViewAc.class));
+                                break;
+                            case 8:
+                                startActivity(new Intent(getActivity(), WaveLoadingAc.class));
+                                break;
+                            case 9:
+                                startActivity(new Intent(getActivity(), VerificationCodeAc.class));
+                                break;
+                            case 10:
+                                startActivity(new Intent(getActivity(), CornerLabelAc.class));
+                                break;
+                            case 11:
+                                startActivity(new Intent(getActivity(), EditTextAc.class));
+                                break;
+                            case 12:
+                                startActivity(new Intent(getActivity(), ProgressAc.class));
+                                break;
+                            case 13:
+                                startActivity(new Intent(getActivity(), DialogAc.class));
+                                break;
+                            case 14:
+                                startActivity(new Intent(getActivity(), BlurAc.class));
+                                break;
                         }
                         break;
                     case "navigation_item_recycler":
                         switch (position) {
                             case 0:
                                 startActivity(new Intent(getActivity(), CommonAdapterAc.class));
+                                break;
+                            case 1:
+                                startActivity(new Intent(getActivity(), DiscreteScrollViewAc.class));
+                                break;
+                            case 2:
+                                startActivity(new Intent(getActivity(), LayoutSwitchAc.class));
                                 break;
                         }
                         break;
@@ -114,6 +167,13 @@ public class MainFragment extends BaseFragment {
                         switch (position) {
                             case 0:
                                 startActivity(new Intent(getActivity(), MagicIndicatorMainAc.class));
+                                break;
+                        }
+                        break;
+                    case "navigation_item_animation":
+                        switch (position) {
+                            case 0:
+                                startActivity(new Intent(getActivity(), CommonAnimAc.class));
                                 break;
                         }
                         break;

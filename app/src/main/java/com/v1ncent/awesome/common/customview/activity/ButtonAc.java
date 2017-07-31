@@ -1,11 +1,14 @@
 package com.v1ncent.awesome.common.customview.activity;
 
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.fenjuly.library.ArrowDownloadButton;
@@ -50,6 +53,12 @@ public class ButtonAc extends BaseActivity {
 
     int count = 0;
     int progress = 0;
+    @BindView(R.id.OneDrawable)
+    Button OneDrawable;
+    @BindView(R.id.OneDrawable2)
+    Button OneDrawable2;
+    @BindView(R.id.OneDrawable3)
+    Button OneDrawable3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,6 +73,19 @@ public class ButtonAc extends BaseActivity {
         if (getSupportActionBar() != null)
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("按钮");
+
+
+        Drawable color = name.gudong.statebackground.OneDrawable.createBgColor(this, Color.parseColor("#F08080"));
+        OneDrawable.setBackgroundDrawable(color);
+        OneDrawable.setClickable(true);
+
+        Drawable color2 = name.gudong.statebackground.OneDrawable.createBgColorWithAlphaMode(this, Color.parseColor("#F08080"));
+        OneDrawable2.setBackgroundDrawable(color2);
+        OneDrawable2.setClickable(true);
+
+        Drawable color3 = name.gudong.statebackground.OneDrawable.createBgColorWithDarkMode(this, Color.parseColor("#F08080"));
+        OneDrawable3.setBackgroundDrawable(color3);
+        OneDrawable3.setClickable(true);
     }
 
     @OnClick({R.id.arrow_download_button})

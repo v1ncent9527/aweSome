@@ -11,6 +11,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            abiFilters "armeabi","armeabi-v7a", "x86", "mips"
+        }
     }
     buildTypes {
         release {
@@ -45,7 +51,7 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
 
     /**
-     * TextView
+     * Custom
      */
     //https://github.com/robinhood/ticker
     compile 'com.robinhood.ticker:ticker:1.2.0'
@@ -57,6 +63,18 @@ dependencies {
     compile 'com.github.lygttpod:SuperTextView:1.1.2'
     //https://github.com/klinker24/Android-TextView-LinkBuilder
     compile 'com.klinkerapps:link_builder:1.5.2'
+    //https://github.com/poldz123/ShapeRipple
+    compile 'com.rodolfonavalon:ShapeRippleLibrary:1.0.0'
+    //https://github.com/nntuyen/mkloader
+    compile 'com.tuyenmonkey:mkloader:1.3.0'
+    //https://github.com/gongwen/MarqueeViewLibrary
+    compile 'com.gongwen:marqueelibrary:1.0.4'
+    //https://github.com/race604/WaveLoading
+    compile 'com.race604.waveloading:library:1.1.1'
+    //https://github.com/czy1121/cornerlabelview
+    compile 'com.github.czy1121:cornerlabelview:1.0.3'
+    //https://github.com/wl9739/BlurredView
+    compile 'com.qiushui:blurredview:0.8.1'
     /**
      * 抽屉菜单
      */
@@ -71,6 +89,8 @@ dependencies {
     compile 'com.github.zagum:Android-SwitchIcon:1.3.4'
     //https://github.com/7heaven/SHSwitchView
     compile 'com.7heaven.ioswidget:iosswitch:0.6'
+    //https://github.com/RiccardoMoro/RMSwitch
+    compile 'com.rm:rmswitch:1.2.2'
     /**
      * 按钮
      */
@@ -78,11 +98,15 @@ dependencies {
     compile 'com.github.medyo:fancybuttons:1.8.3'
     //https://github.com/fenjuly/ArrowDownloadButton
     compile 'com.github.fenjuly:ArrowDownloadButton:9e15b85e8a'
+    //https://github.com/maoruibin/OneDrawable
+    compile 'com.github.maoruibin:OneDrawable:1.1.0'
     /**a
      * RecyclerView
      */
     //https://github.com/CymChad/BaseRecyclerViewAdapterHelper
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18'
+    //https://github.com/yarolegovich/DiscreteScrollView
+    compile 'com.yarolegovich:discrete-scrollview:1.2.0'
     /**
      * Photo
      */
@@ -97,5 +121,15 @@ dependencies {
      */
     //https://github.com/hackware1993/MagicIndicator
     compile 'com.github.hackware1993:MagicIndicator:1.5.0'
-
+    /**
+     *utils
+     */
+    //https://github.com/QuadFlask/colorpicker
+    compile 'com.github.QuadFlask:colorpicker:0.0.13'
+    compile 'org.adw.library:discrete-seekbar:1.0.1'
+    /**
+     * animation
+     */
+    //https://github.com/hujiaweibujidao/wava
+    compile 'com.github.hujiaweibujidao:wava:1.0.0'
 }
