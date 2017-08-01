@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/window_background">
@@ -10,7 +11,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="66dp">
+        android:paddingTop="66dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,17 +21,276 @@
             android:padding="16dp">
 
             <mehdi.sakout.fancybuttons.FancyButton
-                android:id="@+id/ad_dialog"
+                android:id="@+id/default_two_btns"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 app:fb_borderColor="#FFFFFF"
                 app:fb_borderWidth="1dp"
-                app:fb_defaultColor="#ff5f69"
-                app:fb_focusColor="#ff838b"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
                 app:fb_radius="4dp"
-                app:fb_text="ReLoad"
+                app:fb_text="NormalDialog Default(two btns)"
                 app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/style_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalDialog StyleTwo"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/custom_attr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalDialog Custom Attr"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/one_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalDialog(one btn)"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/thres_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalDialog(three btns))"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/md_two_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="MaterialDialogDefault Default(two btns)"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/md_one_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="MaterialDialogDefault(one btn)"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/md_three_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="MaterialDialogDefault(three btns)"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/normal_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalListDialog"
+                app:fb_textColor="#FFFFFF" />
+
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/list_custom_attr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalListDialog Custom Attr"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/list_no_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalListDialog No Title"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/list_with_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalListDialog DataSource String[]"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/list_with_adapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="NormalListDialog DataSource Adapter"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/action_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="ActionSheetDialog"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/action_sheet_no_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="ActionSheetDialog NoTitle"
+                app:fb_textColor="#FFFFFF" />
+
+            <include layout="@layout/base_line" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/cd_base_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="Custome Dialog extends BaseDialog"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/cd_bottom_base_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="Custome Dialog extends BottomBaseDialog"
+                app:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/cd_top_base_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="Custome Dialog extends TopBaseDialog"
+                app:fb_textColor="#FFFFFF" />
+
+
+            <include layout="@layout/base_line" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/ios_taobao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                app:fb_borderColor="#FFFFFF"
+                app:fb_borderWidth="1dp"
+                app:fb_defaultColor="@color/primary"
+                app:fb_focusColor="@color/primary_light"
+                app:fb_radius="4dp"
+                app:fb_text="Custom Anim like ios taobao"
+                app:fb_textColor="#FFFFFF" />
+
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

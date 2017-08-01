@@ -15,6 +15,10 @@ import android.widget.FrameLayout;
 
 import com.v1ncent.awesome.base.BaseActivity;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +44,7 @@ public class MainActivity extends BaseActivity {
     private Context mContest;
     private ActionBarDrawerToggle mDrawerToggle;
     private View headerView;
-
+    private String tempTitle = "CustomView";
     private ArrayList<String> itemsList = new ArrayList<>();
 
     @Override
@@ -54,6 +58,9 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mContest = this;
+
+        //注册成为订阅者
+        EventBus.getDefault().register(this);
 
         toolbar.setTitle("CustomView");
         setSupportActionBar(toolbar);
@@ -74,6 +81,21 @@ public class MainActivity extends BaseActivity {
         intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_ui)), "navigation_item_ui");
     }
 
+    @Subscribe(threadMode = ThreadMode.POSTING)
+    public void onEvent(String overscroll) {
+        if (!overscroll.equals("0")) {
+            toolbar.setTitle(tempTitle + "(" + overscroll + ")");
+        } else {
+            toolbar.setTitle(tempTitle);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        //解除注册
+        EventBus.getDefault().unregister(this);
+    }
 
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
@@ -81,6 +103,7 @@ public class MainActivity extends BaseActivity {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         toolbar.setTitle(menuItem.getTitle());
+                        tempTitle = (String) toolbar.getTitle();
                         switch (menuItem.getItemId()) {
                             case R.id.navigation_item_ui:
                                 intoMain(Arrays.asList(mContest.getResources().getStringArray(R.array.navigation_item_ui)), "navigation_item_ui");

@@ -75,6 +75,8 @@ dependencies {
     compile 'com.github.czy1121:cornerlabelview:1.0.3'
     //https://github.com/wl9739/BlurredView
     compile 'com.qiushui:blurredview:0.8.1'
+    //https://github.com/EverythingMe/overscroll-decor
+    compile 'me.everything:overscroll-decor-android:1.0.4'
     /**
      * 抽屉菜单
      */

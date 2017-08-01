@@ -221,6 +221,11 @@
             android:theme="@style/AppTheme.Transparent"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
+            android:name=".common.customview.activity.DialogAc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
             android:name=".common.customview.activity.BlurAc"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Transparent"

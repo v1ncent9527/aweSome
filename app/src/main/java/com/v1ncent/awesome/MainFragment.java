@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.orhanobut.logger.Logger;
 import com.v1ncent.awesome.base.BaseFragment;
 import com.v1ncent.awesome.common.animaiton.activity.CommonAnimAc;
 import com.v1ncent.awesome.common.customview.activity.BlurAc;
@@ -35,10 +36,15 @@ import com.v1ncent.awesome.common.test.activity.XxxHdpiAc;
 import com.v1ncent.awesome.common.viewpager.activity.MagicIndicatorMainAc;
 import com.v1ncent.awesome.utils.impl.OnRecyclerViewListener;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import me.everything.android.ui.overscroll.IOverScrollDecor;
+import me.everything.android.ui.overscroll.IOverScrollUpdateListener;
+import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
 /**
  * Created by v1ncent on 2017/5/12.
@@ -52,6 +58,7 @@ public class MainFragment extends BaseFragment {
     private MainAdapter mainAdapter;
     private Context mContext;
     private String TAG;
+    private IOverScrollDecor mVertOverScrollEffect;
 
     @Override
     public void onClickListener(View v) {
@@ -65,7 +72,6 @@ public class MainFragment extends BaseFragment {
         ButterKnife.bind(this, view);
         mContext = getActivity();
 
-
         initDate();
         initView();
         return view;
@@ -76,6 +82,15 @@ public class MainFragment extends BaseFragment {
         mainAdapter = new MainAdapter(mContext, itemList);
         mainRecycler.setAdapter(mainAdapter);
 
+        // Vertical
+        mVertOverScrollEffect = OverScrollDecoratorHelper.setUpOverScroll(mainRecycler, OverScrollDecoratorHelper.ORIENTATION_VERTICAL);
+        mVertOverScrollEffect.setOverScrollUpdateListener(new IOverScrollUpdateListener() {
+            @Override
+            public void onOverScrollUpdate(IOverScrollDecor decor, int state, float offset) {
+                EventBus.getDefault().post(String.valueOf((int) offset));
+                Logger.i(String.valueOf((int) offset));
+            }
+        });
         mainAdapter.addItemClickListener(new OnRecyclerViewListener() {
             @Override
             public void onItemClickListener(int position) {
