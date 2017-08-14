@@ -59,7 +59,6 @@ public class AnimationUseAc extends BaseActivity {
             // Enable the Up button
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("AnimationUse(->选取样式)");
-        mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 

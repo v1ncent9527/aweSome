@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.v1ncent.awesome.common.customview.view.CustScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="512dp"
+            android:src="@mipmap/shop_details_1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="512dp"
+            android:src="@mipmap/shop_details_2" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@mipmap/shop_details_3" />
+    </LinearLayout>
+
+</com.v1ncent.awesome.common.customview.view.CustScrollView>

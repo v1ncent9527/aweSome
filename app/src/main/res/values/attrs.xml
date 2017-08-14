@@ -82,4 +82,11 @@
         <attr name="borderWidth" format="dimension" />
     </declare-styleable>
 
+    <!--SwipeMenuLayout-->
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
 </resources>

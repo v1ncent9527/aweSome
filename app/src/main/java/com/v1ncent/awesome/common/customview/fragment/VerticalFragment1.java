@@ -1,0 +1,19 @@
+package com.v1ncent.awesome.common.customview.fragment;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.v1ncent.awesome.R;
+
+public class VerticalFragment1 extends Fragment {
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.vertical_fragment1, null);
+        return rootView;
+    }
+}

@@ -16,13 +16,21 @@
         <item>Progress</item>
         <item>Dialog</item>
         <item>blur</item>
-
+        <item>Popup</item>
+        <item>DragLayout</item>
+        <item>CountdownView</item>
+        <item>ExplosionFieldView</item>
+        <item>PickerView</item>
+        <item>CouponView</item>
+        <item>BadgeView</item>
     </string-array>
 
     <string-array name="navigation_item_recycler">
         <item>通用Adapter</item>
         <item>DiscreteScrollView</item>
         <item>LayoutSwitch</item>
+        <item>SwipeDelMenuLayout</item>
+        <item>ShimmerLayout</item>
     </string-array>
 
     <string-array name="navigation_item_test">
@@ -37,9 +45,12 @@
     </string-array>
     <string-array name="navigation_item_viewpager">
         <item>MagicIndicator</item>
+        <item>仿微信Tab</item>
     </string-array>
 
     <string-array name="navigation_item_animation">
         <item>常用动画</item>
+        <item>Mkloader</item>
+        <item>AVLoadingIndicatorView</item>
     </string-array>
 </resources>

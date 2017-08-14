@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.daimajia.numberprogressbar.NumberProgressBar;
 import com.v1ncent.awesome.R;
 import com.v1ncent.awesome.base.BaseActivity;
 import com.v1ncent.awesome.common.customview.view.FlikerProgressBar;
@@ -17,6 +18,8 @@ import com.v1ncent.awesome.common.customview.view.NewCreditSesameView;
 import com.v1ncent.awesome.common.customview.view.OldCreditSesameView;
 
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -59,6 +62,8 @@ public class ProgressAc extends BaseActivity implements Runnable {
             }
         }
     };
+    @BindView(R.id.number_progress_bar)
+    NumberProgressBar numberProgressBar;
     private Random random = new Random();
     private final int[] mColors = new int[]{
             0xFFFF0066,
@@ -74,6 +79,7 @@ public class ProgressAc extends BaseActivity implements Runnable {
     };
 
     private int chartNum = 24;
+    private Timer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +99,19 @@ public class ProgressAc extends BaseActivity implements Runnable {
         downLoad();
 
         newCreditSesame.setBackgroundColor(mColors[0]);
+
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        numberProgressBar.incrementProgressBy(1);
+                    }
+                });
+            }
+        }, 1000, 100);
     }
 
     private void downLoad() {

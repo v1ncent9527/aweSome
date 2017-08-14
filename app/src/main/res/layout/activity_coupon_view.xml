@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <yyydjk.com.library.CouponView
+            android:id="@+id/couponView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:cv_dash_line_color="@android:color/white"
+            app:cv_dash_line_gap="10dp"
+            app:cv_dash_line_height="2dp"
+            app:cv_dash_line_length="10dp"
+            app:cv_dash_line_margin_bottom="5dp"
+            app:cv_dash_line_margin_left="50dp"
+            app:cv_dash_line_margin_right="50dp"
+            app:cv_dash_line_margin_top="5dp"
+            app:cv_semicircle_color="@android:color/white"
+            app:cv_semicircle_gap="8dp"
+            app:cv_semicircle_radius="4dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="半圆边缘" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/semicircle_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="top" />
+
+                    <CheckBox
+                        android:id="@+id/semicircle_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="bottom" />
+
+                    <CheckBox
+                        android:id="@+id/semicircle_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="left" />
+
+                    <CheckBox
+                        android:id="@+id/semicircle_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="right" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="虚线边框" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/dash_line_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="top" />
+
+                    <CheckBox
+                        android:id="@+id/dash_line_bottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bottom" />
+
+                    <CheckBox
+                        android:id="@+id/dash_line_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="left" />
+
+                    <CheckBox
+                        android:id="@+id/dash_line_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="right" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="半圆的半径" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbSemicircleRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="40"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="半圆的间距" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbSemicircleCap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="40"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="虚线的长度" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbDashLineLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="40"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="虚线的间距" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbDashLineGap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="40"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="虚线的高度" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbDashLineHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="100"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="顶部虚线距离顶部的距离" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbTopDashLineMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="100"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="底部虚线距离底部的距离" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbBottomDashLineMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="100"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="左侧虚线距离左侧的距离" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbLeftDashLineMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="100"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="右侧虚线距离右侧的距离" />
+
+                <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                    android:id="@+id/sbRightDashLineMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dsb_max="100"
+                    app:dsb_min="0"
+                    app:dsb_value="10" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

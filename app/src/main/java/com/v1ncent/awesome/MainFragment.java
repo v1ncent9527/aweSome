@@ -12,15 +12,23 @@ import android.view.ViewGroup;
 
 import com.orhanobut.logger.Logger;
 import com.v1ncent.awesome.base.BaseFragment;
+import com.v1ncent.awesome.common.animaiton.activity.AVLoadingAc;
 import com.v1ncent.awesome.common.animaiton.activity.CommonAnimAc;
+import com.v1ncent.awesome.common.customview.activity.BadgeViewAc;
 import com.v1ncent.awesome.common.customview.activity.BlurAc;
 import com.v1ncent.awesome.common.customview.activity.ButtonAc;
 import com.v1ncent.awesome.common.customview.activity.CircularAnimAc;
 import com.v1ncent.awesome.common.customview.activity.CornerLabelAc;
+import com.v1ncent.awesome.common.customview.activity.CountdownViewAc;
+import com.v1ncent.awesome.common.customview.activity.CouponViewAc;
 import com.v1ncent.awesome.common.customview.activity.DialogAc;
+import com.v1ncent.awesome.common.customview.activity.DragLayoutAc;
 import com.v1ncent.awesome.common.customview.activity.EditTextAc;
+import com.v1ncent.awesome.common.customview.activity.ExplosionFieldAc;
 import com.v1ncent.awesome.common.customview.activity.MarqueeViewAc;
 import com.v1ncent.awesome.common.customview.activity.MkloaderAc;
+import com.v1ncent.awesome.common.customview.activity.PickViewAc;
+import com.v1ncent.awesome.common.customview.activity.PopupAc;
 import com.v1ncent.awesome.common.customview.activity.ProgressAc;
 import com.v1ncent.awesome.common.customview.activity.ShapeRippleAc;
 import com.v1ncent.awesome.common.customview.activity.SwitchButtonAc;
@@ -31,9 +39,12 @@ import com.v1ncent.awesome.common.new_technology.activity.EvetBusAc1;
 import com.v1ncent.awesome.common.recyclerview.activity.CommonAdapterAc;
 import com.v1ncent.awesome.common.recyclerview.activity.DiscreteScrollViewAc;
 import com.v1ncent.awesome.common.recyclerview.activity.LayoutSwitchAc;
+import com.v1ncent.awesome.common.recyclerview.activity.ShimmerLayoutAc;
+import com.v1ncent.awesome.common.recyclerview.activity.SwipeLayoutAc;
 import com.v1ncent.awesome.common.recyclerview.activity.SwipeMenuAc;
 import com.v1ncent.awesome.common.test.activity.XxxHdpiAc;
 import com.v1ncent.awesome.common.viewpager.activity.MagicIndicatorMainAc;
+import com.v1ncent.awesome.common.viewpager.activity.WeixinTabAc;
 import com.v1ncent.awesome.utils.impl.OnRecyclerViewListener;
 
 import org.greenrobot.eventbus.EventBus;
@@ -142,6 +153,27 @@ public class MainFragment extends BaseFragment {
                             case 14:
                                 startActivity(new Intent(getActivity(), BlurAc.class));
                                 break;
+                            case 15:
+                                startActivity(new Intent(getActivity(), PopupAc.class));
+                                break;
+                            case 16:
+                                startActivity(new Intent(getActivity(), DragLayoutAc.class));
+                                break;
+                            case 17:
+                                startActivity(new Intent(getActivity(), CountdownViewAc.class));
+                                break;
+                            case 18:
+                                startActivity(new Intent(getActivity(), ExplosionFieldAc.class));
+                                break;
+                            case 19:
+                                startActivity(new Intent(getActivity(), PickViewAc.class));
+                                break;
+                            case 20:
+                                startActivity(new Intent(getActivity(), CouponViewAc.class));
+                                break;
+                            case 21:
+                                startActivity(new Intent(getActivity(), BadgeViewAc.class));
+                                break;
                         }
                         break;
                     case "navigation_item_recycler":
@@ -154,6 +186,12 @@ public class MainFragment extends BaseFragment {
                                 break;
                             case 2:
                                 startActivity(new Intent(getActivity(), LayoutSwitchAc.class));
+                                break;
+                            case 3:
+                                startActivity(new Intent(getActivity(), SwipeLayoutAc.class));
+                                break;
+                            case 4:
+                                startActivity(new Intent(getActivity(), ShimmerLayoutAc.class));
                                 break;
                         }
                         break;
@@ -183,12 +221,21 @@ public class MainFragment extends BaseFragment {
                             case 0:
                                 startActivity(new Intent(getActivity(), MagicIndicatorMainAc.class));
                                 break;
+                            case 1:
+                                startActivity(new Intent(getActivity(), WeixinTabAc.class));
+                                break;
                         }
                         break;
                     case "navigation_item_animation":
                         switch (position) {
                             case 0:
                                 startActivity(new Intent(getActivity(), CommonAnimAc.class));
+                                break;
+                            case 1:
+                                startActivity(new Intent(getActivity(), MkloaderAc.class));
+                                break;
+                            case 2:
+                                startActivity(new Intent(getActivity(), AVLoadingAc.class));
                                 break;
                         }
                         break;

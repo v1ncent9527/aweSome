@@ -1,6 +1,7 @@
 package com.v1ncent.awesome;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CoordinatorLayout;
@@ -70,8 +71,14 @@ public class MainActivity extends BaseActivity {
         mDrawerToggle.syncState();
         drawerLayout.addDrawerListener(mDrawerToggle);
 
-        navigationView.setItemTextColor(getResources().getColorStateList(R.drawable.nav_menu_text_color, null));
-        navigationView.setItemIconTintList(getResources().getColorStateList(R.drawable.nav_menu_text_color, null));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            navigationView.setItemTextColor(getResources().getColorStateList(R.drawable.nav_menu_text_color, this.getTheme()));
+            navigationView.setItemIconTintList(getResources().getColorStateList(R.drawable.nav_menu_text_color, this.getTheme()));
+        } else {
+            navigationView.setItemTextColor(getResources().getColorStateList(R.drawable.nav_menu_text_color));
+            navigationView.setItemIconTintList(getResources().getColorStateList(R.drawable.nav_menu_text_color));
+        }
+
         setupDrawerContent(navigationView);
         setUpProfileImage();
 

@@ -15,7 +15,7 @@ android {
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
         ndk {
-            abiFilters "armeabi","armeabi-v7a", "x86", "mips"
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
         }
     }
     buildTypes {
@@ -45,6 +45,7 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.1.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.google.code.gson:gson:2.7'
 
     //滑动返回
     compile 'cn.bingoogolapple:bga-swipebacklayout:1.0.8@aar'
@@ -77,6 +78,19 @@ dependencies {
     compile 'com.qiushui:blurredview:0.8.1'
     //https://github.com/EverythingMe/overscroll-decor
     compile 'me.everything:overscroll-decor-android:1.0.4'
+    //https://github.com/iwgang/CountdownView
+    compile 'com.github.iwgang:countdownview:2.1.6'
+    //https://github.com/tyrantgit/ExplosionField
+    compile 'tyrantgit:explosionfield:1.0.1'
+    //https://github.com/Bigkoo/Android-PickerView
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    //https://github.com/daimajia/NumberProgressBar
+    compile 'com.daimajia.numberprogressbar:library:1.4@aar'
+    //https://github.com/dongjunkun/CouponView
+    compile 'com.github.dongjunkun:CouponView:1.0.4'
+    //https://github.com/qstumn/BadgeView
+    compile 'q.rorbin:badgeview:1.1.2'
+
     /**
      * 抽屉菜单
      */
@@ -109,13 +123,18 @@ dependencies {
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18'
     //https://github.com/yarolegovich/DiscreteScrollView
     compile 'com.yarolegovich:discrete-scrollview:1.2.0'
+    //https://github.com/team-supercharge/ShimmerLayout
+    compile 'io.supercharge:shimmerlayout:0.8.0'
+    //https://github.com/facebook/shimmer-android
+    compile 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
     /**
      * Photo
      */
     //https://github.com/bm-x/PhotoView
     compile 'com.bm.photoview:library:1.4.1'
     /**
-     *NewTechnology
+     * NewTechnology
      */
     compile 'org.greenrobot:eventbus:3.0.0'
     /**
@@ -123,8 +142,10 @@ dependencies {
      */
     //https://github.com/hackware1993/MagicIndicator
     compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    //https://github.com/yingLanNull/AlphaTabsIndicator
+    compile 'com.yinglan.alphatabs:library:1.0.8'
     /**
-     *utils
+     * utils
      */
     //https://github.com/QuadFlask/colorpicker
     compile 'com.github.QuadFlask:colorpicker:0.0.13'
@@ -134,4 +155,6 @@ dependencies {
      */
     //https://github.com/hujiaweibujidao/wava
     compile 'com.github.hujiaweibujidao:wava:1.0.0'
+    //https://github.com/81813780/AVLoadingIndicatorView
+    compile 'com.wang.avi:library:2.1.3'
 }
